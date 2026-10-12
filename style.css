@@ -7,7 +7,7 @@ main {
     text-decoration: none;
     display: grid;
     gap: 50px;
-    grid-template-columns: 5fr 2fr 3fr;
+    grid-template-columns: 3fr 5fr 3fr;
     grid-template-areas: "head head head" "nav nav nav" "bal közép jobb" "foot foot foot";
     font-family: Arial, Helvetica, sans-serif;
     text-transform: capitalize;
@@ -32,6 +32,19 @@ nav {
 
 section {
     grid-area: közép;
+    text-align: center;
+    color: white;
+}
+
+section ul {
+    list-style: none;
+}
+
+section li::before {
+    content: "✓";
+    color: green;
+    background-color: rgb(255, 255, 255);
+    text-align: left;
 }
 
 footer {
@@ -47,21 +60,21 @@ a {
 
 h1 {
     color: white;
-    font-size: 18px;
+    font-size: 22px;
     padding: 5px;
     text-transform: capitalize;
 }
 
 h2 {
     color: white;
-    font-size: 15px;
+    font-size: 18px;
     padding: 5px;
     text-transform: capitalize;
 }
 
 p {
     color: white;
-    font-size: 10px;
+    font-size: 12px;
     padding: 5px;
 }
 
@@ -103,8 +116,6 @@ header ul {
 
 .bal {
     grid-area: bal;
-    text-transform: lowercase;
-
 }
 
 .bal ul {
@@ -156,4 +167,8 @@ header ul {
 
 .program a:link {
     background-color: rgb(0, 255, 8);
+}
+
+.footer a {
+    text-align: center;
 }
