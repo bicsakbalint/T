@@ -7,7 +7,7 @@ main {
     text-decoration: none;
     display: grid;
     gap: 50px;
-    grid-template-columns: 3fr 5fr 3fr;
+    grid-template-columns: 2fr 5fr 2fr;
     grid-template-areas: "head head head" "nav nav nav" "bal közép jobb" "foot foot foot";
     font-family: Arial, Helvetica, sans-serif;
 }
