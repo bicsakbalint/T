@@ -1,13 +1,13 @@
 main {
-    background-image: url(background.webp);
+    background-image: url(my_back.jpg);
     background-repeat: repeat;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1500px;
     margin: 0 auto;
     text-decoration: none;
     display: grid;
     gap: 50px;
-    grid-template-columns: 2fr 5fr 2fr;
+    grid-template-columns: 1fr 5fr 1fr;
     grid-template-areas: "head head head" "nav nav nav" "bal közép jobb" "foot foot foot";
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -15,14 +15,21 @@ main {
 header {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(back.jfif);
+    background-image: url(kecske2.jpg);
     background-repeat: repeat;
-    background-attachment: fixed;
+    background-attachment:scroll;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1500px;
+    height: 300px;
     background-size: inherit;
     grid-area: head;
-    display: grid
+    display: block;
+    text-align: center;
+}
+
+header a{
+    display:contents;
+    grid-template-columns: repeat(2 1fr);
 }
 
 nav {
@@ -32,20 +39,13 @@ nav {
 section {
     grid-area: közép;
     color: white;
-    ;
+    display: grid;
 }
 section ul{
     font-size: 12px;
 }
 footer {
     grid-area: foot;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-    font-size: 13px;
-    gap: 10px;
 }
 
 h1 {
@@ -57,97 +57,100 @@ h1 {
 
 h2 {
     color: white;
-    font-size: 18px;
+    font-size: 20px;
     padding: 5px;
     text-transform: capitalize;
 }
 
 p {
     color: white;
-    font-size: 12px;
+    font-size: 15px;
     padding: 5px;
+    background-color: black;
 }
 
 header a:hover {
-    background-color: rgb(0, 175, 175);
+    background:linear-gradient( #ff0000 20%, #f9f9f9 50%, #04ed1f 80%);
 }
 
 header a:link {
-    background-color: red;
+    background-color: #ff0000;
 }
 
 nav a:link {
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(0, 255, 51);
 }
 
 nav a:hover {
-    background-color: rgb(55, 255, 0);
+    background:linear-gradient( #ff0000 20%, #f9f9f9 50%, #04ed1f 80%);
 }
 
+li {
+    background-color: black;
+}
 a {
+    color:black;
+    text-decoration: none;
+    width: 300px;
     text-align: center;
     padding: 4px;
     letter-spacing: 4px;
     word-spacing: 10px;
-    display: grid;
     font-style: oblique;
-}
-
-header ul {
-    color: beige;
-    display: grid;
-    padding: 1px;
-    list-style-type: circle;
-    text-decoration: none;
-    text-align: center;
-    column-gap: 5px;
-    font-size: 15px;
 }
 
 .bal {
     grid-area: bal;
 }
 
+.bal a:link {
+    background-color: aqua;
+    display: grid;
+    height: 20px;
+}
 .jobb {
     grid-area: jobb;
 }
 
-.jobb ul {
-    list-style: none;
-    text-transform: lowercase;
-    color: white;
-}
-
-.jobb li::before {
-    content: "✓";
-    color: green;
-    background-color: rgb(255, 255, 255);
+.jobb a:link {
+    background-color: aqua;
+    text-decoration: none;
+    display: grid;
+    height: 20px;
 }
 
 .hard a:link {
-    background-color: rgb(89, 255, 0);
+    background:linear-gradient( #ff0000 20%, #f9f9f9 50%, #04ed1f 80%);
 }
 
 .web a:link {
-    background-color: rgb(0, 255, 0);
+    background:linear-gradient( #ff0000 20%, #f9f9f9 50%, #04ed1f 80%);
 }
 
 .halozat a:link {
-    background-color: rgb(0, 255, 8);
+    background:linear-gradient( #ff0000 20%, #f9f9f9 50%, #04ed1f 80%);
 }
 
 .halozat a:hover {
-    background-color: rgb(255, 0, 0);
+    background:linear-gradient( #ff0000 20%, #f9f9f9 50%, #04ed1f 80%);
 }
 
 .program a:hover {
-    background-color: rgb(255, 0, 0);
+    background:linear-gradient( #ff0000 20%, #f9f9f9 50%, #04ed1f 80%);
 }
 
 .program a:link {
-    background-color: rgb(0, 255, 8);
+    background:linear-gradient( #ff0000 20%, #f9f9f9 50%, #04ed1f 80%);
 }
 
-.footer a {
+.footer a:link {
     text-align: center;
+    background-color: aqua;
+    margin: auto 0;
+}
+@media (max-width:768px) {
+    .main {
+        grid-template-columns: repeat(2 1fr);
+    }
+    
 }
