@@ -160,6 +160,17 @@ a {
     gap: 20px;
 }
 
+@media (max-width: 768px) {
+    .layout {
+        grid-template-columns: 1fr;
+        grid-template-areas: "head" "nav" "közép" "foot";
+    }
+
+    .bal,
+    .jobb {
+        display: none;
+    }
+}
 /* Mobil */
 @media (max-width: 480px) {
     .layout {
@@ -177,7 +188,7 @@ a {
     .main {
         display: grid;
         width: 100%;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 2fr);
         gap: 20px;
         grid-template-areas: "head" "nav" "közép" "foot";
 
@@ -187,7 +198,7 @@ a {
 @media (max-width:480px) {
     .main {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 2fr;
         grid-template-areas: "head" "nav" "közép" "foot";
 
     }
@@ -196,7 +207,7 @@ a {
 @media (max-width:768px) {
     .header {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 2fr);
         gap: 20px;
         background-position: center;
         background-repeat: no-repeat;
@@ -216,7 +227,7 @@ a {
 @media (max-width:368px) {
     .a {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 2fr);
         gap: 20px;
         padding: 4px;
 
@@ -226,7 +237,7 @@ a {
 @media (max-width:280px) {
     .a {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 2fr);
         gap: 10px;
         padding: 4px;
 
