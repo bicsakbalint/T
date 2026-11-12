@@ -165,8 +165,8 @@ a {
         grid-template-columns: 1fr;
     }
 
-    .left,
-    .right {
+    .bal,
+    .jobb {
         display: none;
     }
 }
