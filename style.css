@@ -161,9 +161,10 @@ a {
 }
 
 /* Mobil */
-@media (max-width: 600px) {
+@media (max-width: 480px) {
     .layout {
         grid-template-columns: 1fr;
+        grid-template-areas: "head" "nav" "közép" "foot";
     }
 
     .bal,
@@ -177,6 +178,7 @@ a {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+        grid-template-areas: "head" "nav" "közép" "foot";
 
     }
 }
@@ -185,13 +187,13 @@ a {
     .main {
         display: grid;
         grid-template-columns: 1fr;
-
+        grid-template-areas: "head" "nav" "közép" "foot";
 
     }
 }
 
 @media (max-width:768px) {
-    .header{
+    .header {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
@@ -208,8 +210,8 @@ a {
     }
 }
 
-@media (max-width:768px) {
-    .a{
+@media (max-width:368px) {
+    .a {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
@@ -217,7 +219,7 @@ a {
     }
 }
 
-@media (max-width:480px) {
+@media (max-width:280px) {
     .a {
         display: grid;
         grid-template-columns: 1fr;
