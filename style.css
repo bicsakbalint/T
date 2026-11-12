@@ -176,6 +176,7 @@ a {
 @media (max-width:768px) {
     .main {
         display: grid;
+        width: 100%;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
         grid-template-areas: "head" "nav" "közép" "foot";
@@ -197,7 +198,8 @@ a {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
-
+        background-position: center;
+        background-repeat: no-repeat;
     }
 }
 
