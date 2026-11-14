@@ -199,8 +199,7 @@ a {
     .header {
         display: grid;
         grid-template-columns: 1fr;
-        background-position: center;
-        background-repeat: no-repeat;
+        background-image: url(kecske2.jpg);
 
     }
 }
