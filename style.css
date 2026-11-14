@@ -135,36 +135,6 @@ a {
     margin: auto 0;
 }
 
-.layout {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    gap: 20px;
-}
-
-@media (max-width: 768px) {
-    .layout {
-        grid-template-columns: 2fr;
-        grid-template-areas: "head" "nav" "közép" "foot";
-    }
-
-    .bal,
-    .jobb {
-        display: none;
-    }
-}
-/* Mobil */
-@media (max-width: 480px) {
-    .layout {
-        grid-template-columns: 2fr;
-        grid-template-areas: "head" "nav" "közép" "foot";
-    }
-
-    .bal,
-    .jobb {
-        display: none;
-    }
-}
-
 @media (max-width:768px) {
     .main {
         display: grid;
@@ -172,7 +142,8 @@ a {
         grid-template-columns: repeat(2, 2fr);
         gap: 20px;
         grid-template-areas: "head" "nav" "közép" "foot";
-
+        background-image: url(kecske2.jpg);
+        background-size: 768px;
     }
 }
 
@@ -181,7 +152,6 @@ a {
         display: grid;
         grid-template-columns: 2fr;
         grid-template-areas: "head" "nav" "közép" "foot";
-
     }
 }
 
@@ -190,8 +160,8 @@ a {
         display: grid;
         grid-template-columns: repeat(2, 2fr);
         gap: 20px;
-        background-position: center;
-        background-repeat: no-repeat;
+        background-image: url(kecske2.jpg);
+        background-size: 768px;
     }
 }
 
@@ -200,7 +170,7 @@ a {
         display: grid;
         grid-template-columns: 1fr;
         background-image: url(kecske2.jpg);
-
+        background-size: 480px;
     }
 }
 
@@ -208,8 +178,8 @@ a {
     .a {
         display: grid;
         grid-template-columns: repeat(2, 2fr);
-        gap: 20px;
-        padding: 4px;
+        gap: 5px;
+        padding: 5px;
 
     }
 }
@@ -218,8 +188,8 @@ a {
     .a {
         display: grid;
         grid-template-columns: repeat(2, 2fr);
-        gap: 10px;
-        padding: 4px;
+        gap: 5px;
+        padding: 5px;
 
     }
 }
