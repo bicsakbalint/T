@@ -49,8 +49,6 @@
                 használnak - ahogy az itt is látható -, amely a váltakozó áramot alacsonyabb feszültségű egyenárammá
                 alakítja.</p>
             <ul>
-                <li>Advanced Technology (AT) – This is the original power supply for legacy computer systems now
-                    considered obsolete.</li>
                 <li>Advanced Technology (AT) Ez az eredeti tápegység a ma már elavultnak tekintett, régebbi
                     számítógépes
                     rendszerekhez.</li>
@@ -180,7 +178,46 @@
             <p>DIMM : <br>A Dual Inline Memory Module (DIMM) egy olyan áramköri lap, amely SDRAM, DDR SDRAM, DDR2 SDRAM,
                 DDR3 SDRAM és DDR4 SDRAM chipeket tartalmaz. Vannak 168-tűs SDRAM DIMM-ek, 184-tűs DDR DIMM-ek, 240-tűs
                 DDR2 és DDR3 DIMM-ek, valamint 288-tűs DDR4 DIMM-ek.</p>
-
+            <p>??? <br>A Small Outline DIMM 72- és 100-tűs kivitelben kapható a 32 bites adatátvitel támogatásához,
+                illetve 144-, 200-, 204- és 260-tűs kivitelben a 64 bites adatátvitel támogatásához. A DIMM ezen kisebb,
+                kompaktabb változata véletlenszerű hozzáférésű adattárolást biztosít, ami ideális laptopokhoz,
+                nyomtatókhoz és egyéb olyan eszközökhöz, ahol a helymegtakarítás előnyös.</p>
+            <h1>1.2.5.5 Egyoldalas, kétoldalas és többcsatornás</h1>
+            <p>A memóriamodulok lehetnek egyoldalasak vagy kétoldalasak. Az egyoldalas memóriamodulok csak az egyik
+                oldalon tartalmaznak RAM-ot, a kétoldalas memóriamodulok pedig mindkét oldalon.
+                A memória sebessége közvetlen hatással van arra, hogy egy processzor mennyi adatot képes feldolgozni egy
+                adott idő alatt. A processzor sebességének növekedésével a memória sebességének is növekednie kell. A
+                memória átviteli sebessége is megnőtt a többcsatornás technológia révén. A standard RAM egycsatornás,
+                ami azt jelenti, hogy az összes RAM-bővítőhely egyszerre címezhető. A kétcsatornás RAM egy második
+                csatornát ad hozzá, hogy egy második modult is egyszerre lehessen elérni. A háromcsatornás technológia
+                egy további csatornát biztosít, így három modulhoz lehet egyszerre hozzáférni. A négycsatornás
+                technológia egy további csatornát ad a memóriavezérlőhöz a még nagyobb sávszélesség érdekében. Ahhoz,
+                hogy a három- és négycsatornás memóriavezérlőket a lehető legnagyobb sávszélességgel lehessen használni,
+                a chipset architektúrájának támogatnia kell azt, és csak annyi csatornát tud használni, amennyiben
+                vannak feltöltve memóriahelyek. Sok esetben a memóriahelyek csak egy bizonyos sorrendben tölthetők fel,
+                hogy minden memóriacsatorna használatban legyen.</p>
+            <h1>1.2.5.6 Gyorsítótár</h1>
+            <p>A leggyorsabb memória jellemzően a statikus RAM (SRAM), amely egy gyorsítótár-memória a CPU által
+                legutóbb használt adatok és utasítások tárolására. Az SRAM gyorsabb hozzáférést biztosít a processzornak
+                az adatokhoz, mint a lassabb dinamikus RAM-ból (DRAM), vagyis a főmemóriából való kinyerésük.</p>
+            <h1>1.2.5.7 Memóriahibák</h1>
+            <p>A memóriahibák akkor fordulnak elő, amikor az adatok nem megfelelően tárolódnak a chipeken. A számítógép
+                különböző módszereket használ a memóriában lévő adathibák észlelésére és kijavítására. <br> Nonparity
+                <br>A paritásmentes memória nem ellenőrzi a memóriában előforduló hibákat. A paritásmentes RAM a
+                leggyakrabban használt RAM-típus az otthoni és üzleti munkaállomásokon. <br>Parity <br>A paritásmemória
+                nyolc bitet tartalmaz az adatok számára, és egy bitet a hibajelzéshez. A hibajelző bitet paritásbitnek
+                nevezik. <br> ECC <br>A hibajavító kóddal ellátott memória képes felismerni a memóriában előforduló
+                többbites hibákat, és kijavítani az egybites hibákat. A pénzügyi vagy adatelemzési célokra használt
+                szerverek esetében előfordulhat, hogy ECC memóriamodulokra van szükség.
+            </p>
+            <h1>1.2.7.1 Adapterkártyák</h1>
+            <p>Az adapterkártyák növelik a számítógép funkcionalitását azáltal, hogy vezérlőket adnak hozzá bizonyos
+                eszközökhöz, vagy kicserélik a hibás portokat.
+                Számos adapterkártya kapható, amelyekkel bővíthető és testreszabható a számítógép képessége. <br> Sound Adapter <br>A hangkártyák biztosítják a hangkezelési funkciókat. <br>Network Interface Card (NIC) <br>A hálózati kártya hálózati kábelen keresztül csatlakoztatja a számítógépet a hálózathoz. <br>eSATA card <br>Egyetlen PCI Express-bővítőhelyen keresztül további belső és külső SATA-csatlakozókat biztosít a számítógéphez. <br>Video adapter <br>A videokártyák biztosítják a videomegjelenítést.</p>
+            <h1>1.2.7.2 Egyéb adapterkártyák</h1>
+            <p>Wireless NIC <br>A vezeték nélküli hálózati kártya rádiófrekvenciák segítségével csatlakoztatja a számítógépet a hálózathoz. <br>Capture card <br> A videofelvevő kártyák videójelet továbbítanak a számítógépnek, hogy a jelet videofelvevő szoftver segítségével tárolóeszközre lehessen rögzíteni.
+ <br>TV tuner card <br>Ezek lehetővé teszik a televíziós jelek megtekintését és rögzítését számítógépen úgy, hogy a kábel-TV-t, műholdvevőt vagy antennát a beépített tunerkártyához csatlakoztatják. <br>Universal Serial Bus (USB) controller card <br>További USB-csatlakozókat biztosít a számítógép és a perifériák összekapcsolásához.
+Fontos megjegyezni, hogy ezek közül az adapterkártyák közül néhány beépíthető az alaplapba.</p>
         </section>
         <footer>
             <a href="index.html">Vissza</a>

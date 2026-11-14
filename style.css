@@ -92,17 +92,19 @@ nav a:hover {
 
 li {
     background-color: black;
+    color: white;
+    font-size: 17px;
+    list-style-type: none;
 }
 
 a {
-    color: black;
+    color: blueviolet;
     text-decoration: none;
     width: 300px;
     text-align: center;
     padding: 4px;
     letter-spacing: 4px;
     word-spacing: 10px;
-    font-style: oblique;
 }
 
 .hard a:link {
@@ -130,9 +132,13 @@ a {
 }
 
 .footer a:link {
+    background: linear-gradient(#ff0000 20%, #f9f9f9 50%, #04ed1f 80%);
     text-align: center;
-    background-color: aqua;
     margin: auto 0;
+}
+
+.footer a:hover {
+    background: linear-gradient(#ff0000 20%, #f9f9f9 50%, #04ed1f 80%);
 }
 
 @media (max-width:768px) {
