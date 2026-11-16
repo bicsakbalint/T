@@ -51,6 +51,11 @@ footer {
     grid-area: foot;
 }
 
+img {
+    width: 700px;
+    margin: 0 auto;
+}
+
 h1 {
     color: white;
     font-size: 22px;
@@ -103,26 +108,6 @@ a {
     font-style: oblique;
 }
 
-.bal {
-    grid-area: bal;
-}
-
-.bal a:link {
-    background-color: aqua;
-    display: grid;
-    height: 20px;
-}
-
-.jobb {
-    grid-area: jobb;
-}
-
-.jobb a:link {
-    background-color: aqua;
-    text-decoration: none;
-    display: grid;
-    height: 20px;
-}
 
 .hard a:link {
     background: linear-gradient(#ff0000 20%, #f9f9f9 50%, #04ed1f 80%);
@@ -171,6 +156,7 @@ a {
         display: none;
     }
 }
+
 /* Mobil */
 @media (max-width: 480px) {
     .layout {
@@ -192,6 +178,11 @@ a {
         gap: 20px;
         grid-template-areas: "head" "nav" "közép" "foot";
 
+        img {
+            width: 650px;
+            margin: 0 auto;
+        }
+
     }
 }
 
@@ -201,6 +192,10 @@ a {
         grid-template-columns: 2fr;
         grid-template-areas: "head" "nav" "közép" "foot";
 
+        img {
+            width: 350px;
+            margin: 0 auto;
+        }
     }
 }
 
