@@ -34,111 +34,245 @@
         <section>
             <h1>Programozás:</h1>
             <p># Ez az első program, egysoros comment
-            <br>
-            # 1 sornyi szöveg:
-            print("Hello Én")
-            <br>
-            # változó használata:
-            nev = "Én"
-            print("Csá " + nev + "!")
-            <br>
-            # csak változók:
-            kosz1 = "Hello"
-            jel = "?"
-            <br>
+                <br>
+                # 1 sornyi szöveg:
+                print("Hello Én")
+                <br>
+                # változó használata:
+                nev = "Én"
+                print("Csá " + nev + "!")
+                <br>
+                # csak változók:
+                kosz1 = "Hello"
+                jel = "?"
+                <br>
 
-            """Többsoros comment
-            újra felhaszználás, itt jó,
-            hogy nincs szóköz a kosz1 változóban"""
-            <br>
-            print(kosz1 + jel)
-            <br>
-            Alapműveletek:
-            <br>
-            print(2*3) <br>
-            a = 5 <br>
-            b = 7 <br>
-            print(a * b)
-            <br>
-            Ellenőrzések:
-            <br>
-            from selectors import SelectSelector
-            <br>
-            voltSzintlepes = False <br>
-            xp = 700 <br>
-            gK = 5 <br>
-            oXp = 75 <br>
-            oK = 1 <br>
-            lvl = 700 <br>
-            osszes = gXp * gK + xp <br>
-            print("Kezdés") <br>
-            osszes = xp <br>
-            #Goblinokért Xp <br>
-            #Xp kiírása <br>
-            print(osszes) <br>
-            if voltSzintlepes == False: <br>
-            if osszes >= lvl: <br>
-            print("Wow szintet léptél") <br>
-            voltSzintlepes = True <br>
-            else: <br>
-            print("Nem léptél szintet") <br>
-            else: <br>
-            print("Nem léptél szintet") <br>
-            print("Csata Goblinokkal") <br>
-            osszes = osszes + gXp * gK <br>
-            #Xp vizsgálata elágazással <br>
-            print(osszes) <br>
-            if voltSzintlepes == False: <br>
-            if osszes >= lvl: <br>
-            print("Wow szintet léptél") <br>
-            voltSzintlepes = True <br>
-            else: <br>
-            print("Nem léptél szintet") <br>
-            else: <br>
-            print("Nem léptél szintet") <br>
-            #Orkokért Xp <br>
-            print("Csata Orkokkal") <br>
-            osszes = xp + oXp * oK + gXp * gK <br>
-            #Xp kiírása <br>
-            print(osszes) <br>
-            #Xp vizsgálata elágazással <br>
-            if voltSzintlepes == False: <br>
-            if osszes >= lvl: <br>
-            print("Wow szintet léptél") <br>
-            voltSzintlepes = True <br>
-            else: <br>
-            print("Nem léptél szintet") <br>
-            else: <br>
-            print("Nem léptél szintet") <br>
-            <br>
-            print("Program vége") <br> </p>
+                """Többsoros comment
+                újra felhaszználás, itt jó,
+                hogy nincs szóköz a kosz1 változóban"""
+                <br>
+                print(kosz1 + jel)
+                <br>
+                Alapműveletek:
+                <br>
+                print(2*3) <br>
+                a = 5 <br>
+                b = 7 <br>
+                print(a * b)
+                <br>
+                Ellenőrzések:
+                <br>
+                from selectors import SelectSelector
+                <br>
+                voltSzintlepes = False <br>
+                xp = 700 <br>
+                gK = 5 <br>
+                oXp = 75 <br>
+                oK = 1 <br>
+                lvl = 700 <br>
+                osszes = gXp * gK + xp <br>
+                print("Kezdés") <br>
+                osszes = xp <br>
+                #Goblinokért Xp <br>
+                #Xp kiírása <br>
+                print(osszes) <br>
+                if voltSzintlepes == False: <br>
+                if osszes >= lvl: <br>
+                print("Wow szintet léptél") <br>
+                voltSzintlepes = True <br>
+                else: <br>
+                print("Nem léptél szintet") <br>
+                else: <br>
+                print("Nem léptél szintet") <br>
+                print("Csata Goblinokkal") <br>
+                osszes = osszes + gXp * gK <br>
+                #Xp vizsgálata elágazással <br>
+                print(osszes) <br>
+                if voltSzintlepes == False: <br>
+                if osszes >= lvl: <br>
+                print("Wow szintet léptél") <br>
+                voltSzintlepes = True <br>
+                else: <br>
+                print("Nem léptél szintet") <br>
+                else: <br>
+                print("Nem léptél szintet") <br>
+                #Orkokért Xp <br>
+                print("Csata Orkokkal") <br>
+                osszes = xp + oXp * oK + gXp * gK <br>
+                #Xp kiírása <br>
+                print(osszes) <br>
+                #Xp vizsgálata elágazással <br>
+                if voltSzintlepes == False: <br>
+                if osszes >= lvl: <br>
+                print("Wow szintet léptél") <br>
+                voltSzintlepes = True <br>
+                else: <br>
+                print("Nem léptél szintet") <br>
+                else: <br>
+                print("Nem léptél szintet") <br>
+                <br>
+                print("Program vége") <br>
+            </p>
 
             <h2>Ciklusok</h2> <br>
             <p>i = 0 <br>
-            while i <= 5: <br>
-            print(f"szia","",end="") <br>
-            i += 1 <br>
-            <br>
-            i = 0 <br>
-            while i <= 3: <br>
-                print(f"{i}. menü") <br>
-                i += 1 <br>
+                while i <= 5: <br>
+                    print(f"szia","",end="") <br>
+                    i += 1 <br>
+                    <br>
+                    i = 0 <br>
+                    while i <= 3: <br>
+                        print(f"{i}. menü") <br>
+                        i += 1 <br>
+                        <br>
+
+                        print("néhány páratlan számok:") <br>
+                        i = 1 <br>
+                        while i < 9: <br>
+                            print(i) <br>
+                            i += 2 <br>
+                            max = 23 <br>
+                            print(f"{max} darab páros, 1024-től kezdve:") <br>
+                            db = 0 <br>
+                            kezdo = 1024 <br>
+                            while db < max: <br>
+                                print(kezdo) <br>
+                                kezdo += 2 <br>
+                                db += 1 <br> </p>
+            <h2>Eljárás paraméter nélkül</h2> <br>
+            <p>#definíció <br>
+                def koszones(): <br>
+                print("Jó napot! (Viszlát)") <br>
+                <br>
+
+                def jokivansag(): <br>
+                print("napi jó kívánság:") <br>
+                print("jó programozást!") <br>
+                <br>
+
+                def f1_kiirasok(): <br>
+                # hívás <br>
+                print("szeva") # Py API-ban definiált metódus, van paramétere <br>
+                koszones() # saját metódus, paraméter nélkül <br>
+                jokivansag() <br>
+                <br>
+
+                def f2_elagazas(): <br>
+                siker = True <br>
+                if siker: <br>
+                jokivansag() <br>
+                else: <br>
+                koszones() <br>
+                <br>
+
+                # HÍVÁS <br>
+                f1_kiirasok() <br>
+                f2_elagazas() <br>
+            </p>
+            <h2>Eljárás paraméterrel</h2> <br>
+            # definiíció, nélküle nem lehet hívni a metódust! <br>
+            def koszones(nev): # paraméter, mintha lokális változó lenne, de nincs értéke <br>
+            #nev = "Bálint" # lokális változó, csak ebben a def-ben érhető el <br>
+            print(f"Szia {nev}!") <br>
             <br>
 
-            print("néhány páratlan számok:") <br>
+            def dupla(szam): <br>
+            print(f"eredeti szám: {szam}, dupla érték: {szam*2}") <br>
+            """print(f"eredeti szám: {szam}") <br>
+            d = szam * szam <br>
+            print(f"dupla érték: {d}")""" <br>
+            <br>
+
+            # hívás <br>
+            print("szeva") # Py API-ban definiált metódus, van paramétere <br>
+            koszones("Pál") # saját metódus, paraméterrel, ebben a fájlban definiálva <br>
+            koszones("Anna") # saját metódus, paraméterrel, ebben a fájlban definiálva <br>
+            dupla(21) <br>
+            <br>
+            <h2>Elágazás</h2> <br>
+            <p>egesz = int(input("Kérek egy számot: ")) <br>
+                if egesz > 0: <br>
+                print(f"A(z) {egesz} az pozitív!") <br>
+                elif egesz < 0: <br>
+                    print(f"A(z) {egesz} negatív") <br>
+                    else: <br>
+                    print(f"A(z) {egesz} nem pozitiv") <br>
+                    <h2>Metódusok</h2> <br>
+                    from selectors import SelectSelector <br>
+
+
+                    def koszon(): <br>
+                    print("szia") <br>
+
+
+                    def szamol():<br>
+                    a = 2<br>
+                    b = 3<br>
+                    osszeg = a+b<br>
+                    print(f"{a}+{b}={a+b}")<br>
+                    <br>
+
+                    def ellenorezs():<br>
+                    jegy = 5<br>
+                    print(f"Matek jegyed {jegy}, ", "@", end="")<br>
+                    if jegy != 5:<br>
+                    print("van még mit tanulni!")<br>
+                    else:<br>
+                    print("ügyes vagy!")<br>
+                    ertekeles = ""<br>
+                    def osztalyertekelo():<br>
+                    jegy = 5<br>
+                    print(f"A jegyed ({jegy})", "", end="")<br>
+                    ertekeles=""<br>
+                    if jegy >= 1 and jegy <= 5:<br>
+                        if jegy == 1:<br>
+                        ertekeles = "elégtelen"<br>
+                        elif jegy == 2:<br>
+                        ertekeles = "elégséges"<br>
+                        elif jegy == 3:<br>
+                        ertekeles = "közepes"<br>
+                        elif jegy == 4:<br>
+                        ertekeles = "jó"<br>
+                        else:<br>
+                        ertekeles = "jeles"<br>
+                        else:<br>
+                        ertekeles = "hiba, a jegy nem értékelhető"<br>
+                        print(f"{ertekeles}!")<br>
+
+
+                        def eredmeny():<br>
+                        szazalek = 0<br>
+                        print(f"A jegyed ({szazalek})", "", end="")<br>
+                        jegy = 5<br>
+                        if szazalek >= 0 and szazalek <= 100:<br>
+                            if szazalek < 51: <br>
+                                ertekeles = "elégtelen" <br>
+                                elif szazalek < 61: <br>
+                                    ertekeles = "elégséges"<br>
+                                    elif szazalek < 70:<br>
+                                        ertekeles = "közepes"<br>
+                                        elif szazalek < 80:<br>
+                                            ertekeles = "jó"<br>
+                                            print(f"jegyed {jegy}!")<br>
+                                            else:<br>
+                                            ertekeles = "jeles"<br>
+                                            else:<br>
+                                            ertekeles = "hiba, a jegy nem értékelhető"<br>
+                                            koszon()<br>
+                                            szamol()<br>
+                                            ellenorezs()<br>
+
+                                            szamol()<br>
+                                            osztalyertekelo()<br></p>
+            <h2>Ciklusok használása</h2> <br>
             i = 1 <br>
-            while i < 9: <br>
-                print(i) <br>
-                i += 2 <br>
-            max = 23 <br>
-            print(f"{max} darab páros, 1024-től kezdve:") <br>
-            db = 0 <br>
-            kezdo = 1024 <br>
-            while db < max: <br>
-                print(kezdo) <br>
-                kezdo += 2 <br>
-            db += 1 <br> </p>
-    
+            while i <= 3: <br>
+                if i == 2: <br>
+                    print("X", end=" ") <br>
+                else: <br>
+                    print("_", end=" ") <br>
+                i += 1 <br>
+            print("\nciklus vége") <br>
         </section>
 
         </article>
