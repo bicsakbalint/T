@@ -167,112 +167,125 @@
 
                 # HÍVÁS <br>
                 f1_kiirasok() <br>
-                f2_elagazas() </p><br>
+                f2_elagazas()
+            </p><br>
             </p>
             <h2+>Eljárás paraméterrel</h2> <br>
-            <p># definiíció, nélküle nem lehet hívni a metódust! <br>
-            def koszones(nev): # paraméter, mintha lokális változó lenne, de nincs értéke <br>
-            #nev = "Bálint" # lokális változó, csak ebben a def-ben érhető el <br>
-            print(f"Szia {nev}!") <br>
-            <br>
-
-            def dupla(szam): <br>
-            print(f"eredeti szám: {szam}, dupla érték: {szam*2}") <br>
-            """print(f"eredeti szám: {szam}") <br>
-            d = szam * szam <br>
-            print(f"dupla érték: {d}")""" <br>
-            <br>
-
-            # hívás <br>
-            print("szeva") # Py API-ban definiált metódus, van paramétere <br>
-            koszones("Pál") # saját metódus, paraméterrel, ebben a fájlban definiálva <br>
-            koszones("Anna") # saját metódus, paraméterrel, ebben a fájlban definiálva <br>
-            dupla(21) <br>
-            <br>
-            <h2>Elágazás</h2> <br>
-            <p>egesz = int(input("Kérek egy számot: ")) <br>
-                if egesz > 0: <br>
-                print(f"A(z) {egesz} az pozitív!") <br>
-                elif egesz < 0: <br>
-                    print(f"A(z) {egesz} negatív") <br>
-                    else: <br>
-                    print(f"A(z) {egesz} nem pozitiv")</p> <br>
-                    <h2>Metódusok</h2> <br>
-                    from selectors import SelectSelector <br>
-
-
-                    def koszon(): <br>
-                    print("szia") <br>
-
-
-                    def szamol():<br>
-                    a = 2<br>
-                    b = 3<br>
-                    osszeg = a+b<br>
-                    print(f"{a}+{b}={a+b}")<br>
+                <p># definiíció, nélküle nem lehet hívni a metódust! <br>
+                    def koszones(nev): # paraméter, mintha lokális változó lenne, de nincs értéke <br>
+                    #nev = "Bálint" # lokális változó, csak ebben a def-ben érhető el <br>
+                    print(f"Szia {nev}!") <br>
                     <br>
 
-                    def ellenorezs():<br>
-                    jegy = 5<br>
-                    print(f"Matek jegyed {jegy}, ", "@", end="")<br>
-                    if jegy != 5:<br>
-                    print("van még mit tanulni!")<br>
+                    def dupla(szam): <br>
+                    print(f"eredeti szám: {szam}, dupla érték: {szam*2}") <br>
+                    """print(f"eredeti szám: {szam}") <br>
+                    d = szam * szam <br>
+                    print(f"dupla érték: {d}")""" <br>
+                    <br>
+
+                    # hívás <br>
+                    print("szeva") # Py API-ban definiált metódus, van paramétere <br>
+                    koszones("Pál") # saját metódus, paraméterrel, ebben a fájlban definiálva <br>
+                    koszones("Anna") # saját metódus, paraméterrel, ebben a fájlban definiálva <br>
+                    dupla(21) <br>
+                    <br>
+                <h2>Elágazás</h2> <br>
+                <p>egesz = int(input("Kérek egy számot: ")) <br>
+                    if egesz > 0: <br>
+                    print(f"A(z) {egesz} az pozitív!") <br>
+                    elif egesz < 0: <br>
+                        print(f"A(z) {egesz} negatív") <br>
+                        else: <br>
+                        print(f"A(z) {egesz} nem pozitiv")</p> <br>
+                <h2>Metódusok</h2> <br>
+                from selectors import SelectSelector <br>
+
+
+                def koszon(): <br>
+                print("szia") <br>
+
+
+                def szamol():<br>
+                a = 2<br>
+                b = 3<br>
+                osszeg = a+b<br>
+                print(f"{a}+{b}={a+b}")<br>
+                <br>
+
+                def ellenorezs():<br>
+                jegy = 5<br>
+                print(f"Matek jegyed {jegy}, ", "@", end="")<br>
+                if jegy != 5:<br>
+                print("van még mit tanulni!")<br>
+                else:<br>
+                print("ügyes vagy!")<br>
+                ertekeles = ""<br>
+                def osztalyertekelo():<br>
+                jegy = 5<br>
+                print(f"A jegyed ({jegy})", "", end="")<br>
+                ertekeles=""<br>
+                if jegy >= 1 and jegy <= 5:<br>
+                    if jegy == 1:<br>
+                    ertekeles = "elégtelen"<br>
+                    elif jegy == 2:<br>
+                    ertekeles = "elégséges"<br>
+                    elif jegy == 3:<br>
+                    ertekeles = "közepes"<br>
+                    elif jegy == 4:<br>
+                    ertekeles = "jó"<br>
                     else:<br>
-                    print("ügyes vagy!")<br>
-                    ertekeles = ""<br>
-                    def osztalyertekelo():<br>
+                    ertekeles = "jeles"<br>
+                    else:<br>
+                    ertekeles = "hiba, a jegy nem értékelhető"<br>
+                    print(f"{ertekeles}!")<br>
+
+
+                    def eredmeny():<br>
+                    szazalek = 0<br>
+                    print(f"A jegyed ({szazalek})", "", end="")<br>
                     jegy = 5<br>
-                    print(f"A jegyed ({jegy})", "", end="")<br>
-                    ertekeles=""<br>
-                    if jegy >= 1 and jegy <= 5:<br>
-                        if jegy == 1:<br>
-                        ertekeles = "elégtelen"<br>
-                        elif jegy == 2:<br>
-                        ertekeles = "elégséges"<br>
-                        elif jegy == 3:<br>
-                        ertekeles = "közepes"<br>
-                        elif jegy == 4:<br>
-                        ertekeles = "jó"<br>
-                        else:<br>
-                        ertekeles = "jeles"<br>
-                        else:<br>
-                        ertekeles = "hiba, a jegy nem értékelhető"<br>
-                        print(f"{ertekeles}!")<br>
+                    if szazalek >= 0 and szazalek <= 100:<br>
+                        if szazalek < 51: <br>
+                            ertekeles = "elégtelen" <br>
+                            elif szazalek < 61: <br>
+                                ertekeles = "elégséges"<br>
+                                elif szazalek < 70:<br>
+                                    ertekeles = "közepes"<br>
+                                    elif szazalek < 80:<br>
+                                        ertekeles = "jó"<br>
+                                        print(f"jegyed {jegy}!")<br>
+                                        else:<br>
+                                        ertekeles = "jeles"<br>
+                                        else:<br>
+                                        ertekeles = "hiba, a jegy nem értékelhető"<br>
+                                        koszon()<br>
+                                        szamol()<br>
+                                        ellenorezs()<br>
 
-
-                        def eredmeny():<br>
-                        szazalek = 0<br>
-                        print(f"A jegyed ({szazalek})", "", end="")<br>
-                        jegy = 5<br>
-                        if szazalek >= 0 and szazalek <= 100:<br>
-                            if szazalek < 51: <br>
-                                ertekeles = "elégtelen" <br>
-                                elif szazalek < 61: <br>
-                                    ertekeles = "elégséges"<br>
-                                    elif szazalek < 70:<br>
-                                        ertekeles = "közepes"<br>
-                                        elif szazalek < 80:<br>
-                                            ertekeles = "jó"<br>
-                                            print(f"jegyed {jegy}!")<br>
-                                            else:<br>
-                                            ertekeles = "jeles"<br>
-                                            else:<br>
-                                            ertekeles = "hiba, a jegy nem értékelhető"<br>
-                                            koszon()<br>
-                                            szamol()<br>
-                                            ellenorezs()<br>
-
-                                            szamol()<br>
-                                            osztalyertekelo()<br></p>
-            <h2>Ciklusok használása</h2> <br>
-            <p>i = 1 <br>
-            while i <= 3: <br>
-                if i == 2: <br>
-                    print("X", end=" ") <br>
-                else: <br>
-                    print("_", end=" ") <br>
-                i += 1 <br>
-            print("\nciklus vége")</p> <br>
+                                        szamol()<br>
+                                        osztalyertekelo()<br></p>
+                                        <h2>Ciklusok használása</h2> <br>
+                                        <p>i = 1 <br>
+                                            while i <= 3: <br>
+                                                if i == 2: <br>
+                                                print("X", end=" ") <br>
+                                                else: <br>
+                                                print("_", end=" ") <br>
+                                                i += 1 <br>
+                                                print("\nciklus vége")</p> <br>
+                                        def f07_XX__XX__XX___(): <br>
+                                        i = 1 <br>
+                                        while i <= 12: <br>
+                                            if i % 4 == 1 or i % 4 == 2: <br>
+                                            print("X", end="") <br>
+                                            elif i % 4 == 1 or i % 4 == 0: <br>
+                                            print("_", end="")<br>
+                                            <br>
+                                            i += 1
+                                            <br>
+                                            f07_XX__XX__XX___()
+                                            print("\nciklus vége")</p>
         </section>
 
         </article>
